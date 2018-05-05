@@ -1,0 +1,336 @@
+'use strict';
+import { StyleSheet, StatusBar} from 'react-native';
+import Dimensions from 'Dimensions';
+let { width, height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  main: {
+     flex: 1,
+     flexDirection:'column',
+     alignItems: 'center',
+     width:width,
+     height:height,
+     backgroundColor:'#f7f8fc',
+   },
+list_up:{
+  width:width,
+  height:50,
+  flexDirection:'column',
+  justifyContent:'center',
+  paddingLeft:15,
+  paddingRight:15,
+  backgroundColor:'#ffffff',
+  marginTop:10,
+  marginBottom:10,
+  position:'relative'
+},
+list_up_a:{
+  width:width,
+  height:50,
+  flexDirection:'column',
+  justifyContent:'center',
+  paddingLeft:15,
+  paddingRight:15,
+  backgroundColor:'#ffffff',
+  marginBottom:10,
+  position:'relative'
+},
+list_font:{
+  fontSize:13,
+  color:'#5986ff',
+},
+list_font_no:{
+  fontSize:13,
+  color:'#ffffff',
+},
+icon_b:{
+  position:'absolute',
+  height:15,
+  width:15,
+  top:17.5,
+  right:15,
+},
+list_middle:{
+  width:width,
+  flexDirection:'column',
+  paddingRight:15,
+  paddingLeft:15,
+  backgroundColor:'#ffffff'
+},
+list_middle_a:{
+  height:44,
+  width:width-30,
+  flexDirection:'row',
+  alignItems:'center',
+  borderBottomWidth:1,
+  borderBottomColor:'#dddddd',
+
+},
+list_middle_b:{
+  width:width-30,
+  flexDirection:'column',
+  borderBottomWidth:1,
+  borderBottomColor:'#dddddd',
+  paddingTop:15,
+  paddingBottom:7
+},
+list_middle_c:{
+  width:width-30,
+  flexDirection:'column',
+  paddingTop:15,
+  paddingBottom:7
+},
+list_font_a:{
+  fontSize:15,
+  color:'#303030',
+  margin:0,
+  padding:0,
+},
+list_font_b:{
+  fontSize:13,
+  color:'#999999'
+},
+list_middle_type:{
+  flexDirection:'row',
+  alignItems:'center',
+  marginBottom:7,
+},
+list_middle_t:{
+  flexDirection:'row-reverse',
+  alignItems:'center',
+  marginBottom:7,
+},
+list_img:{
+  height:70,
+  width:70,
+},
+list_down:{
+  height:50,
+  width:width,
+  backgroundColor:'#ffffff',
+  alignItems:'center',
+  justifyContent:'space-between',
+  flexDirection:'row',
+  marginTop:10,
+  paddingLeft:15,
+  paddingRight:15
+},
+list_down_a:{
+  width:width,
+  backgroundColor:'#ffffff',
+  flexDirection:'column',
+  marginTop:10,
+  padding:15,
+},
+list_font_c:{
+  fontSize:15,
+  color:'#999999',
+},
+list_box:{
+  borderColor:'#dddddd',
+  borderWidth:1,
+  width:75,
+  height:25,
+  alignItems:'center',
+  justifyContent:'center',
+  borderRadius:5,
+},
+list_box_a:{
+  borderColor:'#5986ff',
+  borderWidth:1,
+  width:75,
+  height:25,
+  alignItems:'center',
+  justifyContent:'center',
+  borderRadius:5,
+  marginRight:15
+},
+list_track:{
+  width:width,
+  height:200,
+  alignItems:'center',
+  justifyContent:'center'
+},
+list_box_up:{
+  flexDirection:'row',
+},
+repair_f:{
+  height:85,
+  width:85,
+},
+list_headImg:{
+  width:90,
+  height:90,
+  alignItems:'center',
+  justifyContent:'center',
+  borderRadius:5,
+},
+list_right:{
+  height:90,
+  flexDirection:'column',
+  width:width-130,
+  marginLeft:10,
+},
+list_right_up:{
+  height:15,
+  flexDirection:'row',
+  alignItems:'center',
+  justifyContent:'space-between',
+  marginTop:5,
+},
+list_right_middle:{
+  height:15,
+  flexDirection:'row',
+  alignItems:'center',
+  marginTop:10,
+},
+list_font_d:{
+  fontSize:15,
+  color:'#ef5b5b'
+},
+list_right_down:{
+  height:15,
+  flexDirection:'row',
+  alignItems:'center',
+  justifyContent:'space-between',
+  marginTop:26
+},
+list_right_a:{
+  height:15,
+  flexDirection:'row',
+  alignItems:'center',
+},
+require_c:{
+  height:12,
+  width:12,
+  marginRight:5
+},
+repair_b:{
+  height:12,
+  width:12,
+},
+list_font_e:{
+  fontSize:15,
+  color:'#edaf37',
+  margin:0,
+  padding:0
+},
+list_font_f:{
+  fontSize:12,
+  color:'#999999'
+},
+list_font_g:{
+  fontSize:15,
+  color:'#5986ff',
+},
+list_box_down:{
+  marginTop:30,
+  flexDirection:'row-reverse'
+},
+list_cost_box:{
+  width:width,
+  backgroundColor:'#ffffff',
+  paddingLeft:15,
+  paddingRight:15,
+  flexDirection:'column',
+  marginTop:10,
+},
+list_cost_a:{
+  width:width-30,
+  flexDirection:'column',
+  borderBottomWidth:1,
+  borderBottomColor:'#dddddd',
+  paddingTop:15,
+},
+
+list_cost_b:{
+  width:width-30,
+  paddingTop:15,
+  paddingBottom:15
+},
+list_cost_d:{
+  flexDirection:'column',
+},
+list_cost_g:{
+  flexDirection:'row',
+},
+list_cost_f:{
+  flexDirection:'column',
+  paddingTop:10,
+  paddingBottom:10
+},
+list_cost_k:{
+  flexDirection:'column',
+  paddingTop:10,
+  paddingBottom:10,
+  borderBottomWidth:1,
+  borderColor:'#dddddd',
+},
+list_cost_e:{
+  flexDirection:'row',
+  height:25,
+  alignItems:'center',
+},
+list_font_h:{
+  fontSize:13,
+  color:'#999999',
+  lineHeight:20,
+  height:20,
+  alignItems:'center'
+},
+list_font_i:{
+  fontSize:15,
+  color:'#303030',
+  lineHeight:20,
+},
+list_line:{
+  borderBottomWidth:1,
+  borderColor:'#dddddd',
+},
+list_down_b:{
+  flexDirection:'row',
+  marginBottom:15,
+  marginTop:15
+},
+repair_n:{
+  height:25,
+  width:26,
+  marginRight:8,
+  marginLeft:8
+},
+list_down_c:{
+  flexDirection:'column',
+  justifyContent:'center',
+  alignItems:'center',
+  marginTop:20,
+},
+list_button:{
+  height:25,
+  justifyContent:'center',
+  alignItems:'center',
+  marginTop:15,
+  marginRight:10,
+  marginLeft:10
+},
+list_button_font:{
+  fontSize:15,
+  color:'#ffffff',
+  marginRight:15,
+  marginLeft:15,
+},
+list_cost_bb:{
+  width:width-30,
+  flexDirection:'row',
+  borderBottomWidth:1,
+  borderBottomColor:'#dddddd',
+  paddingTop:15,
+  paddingBottom:15
+},
+list_cost_dd:{
+  flexDirection:'column',
+  alignItems:'center'
+},
+
+});
+
+module.exports = styles

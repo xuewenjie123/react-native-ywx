@@ -1,0 +1,168 @@
+'use strict';
+import { StyleSheet, StatusBar,} from 'react-native';
+import Dimensions from 'Dimensions';
+let { width, height } = Dimensions.get('window');
+import color from './../../constant/color';
+const styles = StyleSheet.create({
+  main: {
+     flex: 1,
+     flexDirection:'column',
+     alignItems: 'center',
+     width:width,
+     height:height,
+     backgroundColor:color.back1C,
+   },
+  header:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    width:width,
+    height:width*300/750,
+    position:'relative'
+  },
+  header_a:{
+    marginTop:StatusBar.currentHeight,
+    position:"relative",
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    width:width,
+    height:width*260/750,
+  },
+  header_person:{
+    width:152*width/750,
+    height:152*width/750,
+    alignItems: 'center',
+    justifyContent:'center',
+    borderRadius:76*width/750,
+    marginLeft:60*width/750,
+  },
+  header_img:{
+    width:140*width/750,
+    height:140*width/750,
+    borderRadius:70*width/750,
+  },
+  header_name:{
+    fontSize:30*width/750,
+    color:'#ffffff',
+    marginLeft:30*width/750,
+  },
+  header_tel:{
+    fontSize:26*width/750,
+    color:'#ffffff',
+    marginLeft:30*width/750,
+    marginTop:5,
+  },
+  header_box:{
+    flexDirection:'row',
+    alignItems:'center',
+  },
+  header_info:{
+    flexDirection:'column',
+  },
+  header_right:{
+    width:150*width/750,
+    height:50*width/750,
+    borderColor:'#ffffff',
+    borderWidth:1,
+    borderRadius:2,
+    marginRight:60*width/750,
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  header_font:{
+    fontSize:30*width/750,
+    color:'#ffffff'
+  },
+  header_integration:{
+    fontSize:24*width/750,
+    color:'#ffffff',
+  },
+  header_num:{
+    flexDirection:'row',
+    alignItems:'center',
+    position:'absolute',
+    bottom:10,
+    right:60*width/750,
+  },
+  mine_c:{
+    height:12,
+    width:12,
+    marginRight:5,
+  },
+  icon_a:{
+    height:10,
+    width:10,
+    marginLeft:5,
+  },
+  up_box:{
+    width:width-60*width/750,
+    height:width*200/750,
+    backgroundColor:'#ffffff',
+    marginTop:10,
+    marginBottom:10,
+    borderRadius:5,
+  },
+  mine_d:{
+    height:34*width/750,
+    width:34*width/750,
+    marginLeft:30*width/750,
+    marginRight:20*width/750,
+  },
+  up_box_a:{
+    flex:1,
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+  },
+  up_line:{
+    borderBottomWidth:1,
+    borderColor:'#dddddd',
+    marginRight:30*width/750,
+    marginLeft:30*width/750,
+  },
+  middle_box:{
+    width:width-60*width/750,
+    height:width*800/750,
+    backgroundColor:'#ffffff',
+    borderRadius:5,
+    marginBottom:10,
+  },
+  down_box:{
+    marginTop:10,
+    width:width-60*width/750,
+    height:width*100/750,
+    backgroundColor:'#ffffff',
+    borderRadius:5,
+  },
+font:{
+  fontSize:30*width/750,
+  color:'#303030',
+  lineHeight:17,
+},
+font_a:{
+  fontSize:13,
+  color:'#999999',
+  marginRight:10,
+  lineHeight:30*width/750,
+},
+up_box_b:{
+  flexDirection:'row',
+},
+icon_b:{
+  height:30*width/750,
+  width:30*width/750,
+  marginRight:30*width/750,
+},
+mine_o:{
+  height:44*width/750,
+  width:44*width/750,
+  position:'absolute',
+  bottom:164*width/750,
+  right:30*width/750,
+}
+
+
+
+})
+
+module.exports = styles;

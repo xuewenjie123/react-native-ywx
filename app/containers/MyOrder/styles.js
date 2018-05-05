@@ -1,0 +1,166 @@
+'use strict';
+import { StyleSheet, StatusBar} from 'react-native';
+import Dimensions from 'Dimensions';
+let { width, height } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  main: {
+     flex: 1,
+     flexDirection:'column',
+     alignItems: 'center',
+     width:width,
+     height:height,
+     backgroundColor:'#f7f8fc',
+   },
+   list_bar:{
+     height:50,
+     width:width,
+     flexDirection:'row',
+     backgroundColor:'#ffffff'
+   },
+   list_bar_line:{
+     width:width,
+     flexDirection:'row',
+     backgroundColor:'#ffffff',
+     justifyContent:'space-between',
+     paddingLeft:15,
+     paddingRight:15,
+   },
+   list_bar_a:{
+     flex:1,
+     justifyContent:'center',
+     alignItems:'center',
+   },
+   list_line:{
+     width:40,
+     height:1,
+     borderBottomWidth:2,
+     borderColor:'#5986ff',
+   },
+   list_line_a:{
+     width:40,
+     height:1,
+     borderBottomWidth:2,
+     borderColor:'#ffffff',
+   },
+   list_font:{
+     fontSize:15,
+     color:'#5986ff'
+   },
+   list_bar_font:{
+     fontSize:15,
+     color:'#999999'
+   },
+   list_a:{
+     width:width-30,
+     height:180,
+     flexDirection:'column',
+     backgroundColor:'#ffffff',
+     paddingLeft:15,
+     paddingRight:15,
+     marginTop:10,
+     position:'relative'
+   },
+   list_up:{
+     width:width-60,
+     height:85,
+     flexDirection:'row',
+     borderBottomWidth:1,
+     borderBottomColor:'#dddddd',
+     paddingTop:15,
+     paddingBottom:10,
+   },
+   list_font_b:{
+     fontSize:13,
+     color:'#303030',
+   },
+   list_up_a:{
+     width:width-130,
+     height:60,
+     marginLeft:10,
+     paddingTop:2,
+     paddingBottom:2,
+     justifyContent:'space-between',
+     flexDirection:'column',
+   },
+   list_font_c:{
+     fontSize:13,
+     color:'#edaf37',
+   },
+   list_up_b:{
+     width:width-130,
+     flexDirection:'row',
+     justifyContent:'space-between'
+   },
+   list_up_c:{
+     width:width-200,
+   },
+   list_font_d:{
+     fontSize:13,
+     color:'#999999'
+   },
+   list_font_f:{
+     fontSize:13,
+     color:'#999999',
+     lineHeight:16,
+     textAlign:'right'
+   },
+   list_middle_a:{
+     flex:1,
+     justifyContent:'space-between',
+     paddingTop:15,
+     paddingBottom:15
+   },
+   list_font_e:{
+     fontSize:15,
+     color:'#edaf37',
+     lineHeight:16,
+     textAlign:'right'
+   },
+   list_middle_b:{
+     flexDirection:'row-reverse',
+   },
+   list_middle_c:{
+     width:75,
+     height:25,
+     justifyContent:'center',
+     alignItems:'center',
+     borderColor:'#5986ff',
+     borderWidth:1,
+     borderRadius:5,
+   },
+   list_font_j:{
+     fontSize:13,
+     color:'#5986ff'
+   },
+   list_middle_d:{
+     width:75,
+     height:25,
+     justifyContent:'center',
+     alignItems:'center',
+     borderColor:'#999999',
+     borderWidth:1,
+     borderRadius:5,
+   },
+   load_img:{
+     width:144,
+     height:114,
+     marginTop:150,
+     marginBottom:15
+   },
+   repair_loadbox:{
+     flexDirection:'column',
+     alignItems:'center',
+     width:width
+   },
+   load_text:{
+     fontSize:13,
+     color:'#999999'
+   }
+
+
+
+
+});
+
+module.exports = styles
